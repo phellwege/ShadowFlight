@@ -47,6 +47,20 @@
 #fine_print {
     font-size: .75em;
 }
+h2.pgNum {
+    display: block;
+    position: absolute;
+    right: 12%;
+}
+.firstNum {
+    font-size: 1.5em;
+}
+#homePgOne {
+    bottom: 52%;
+}
+#homePgTwo {
+    bottom: 5%;
+}
 
 @media only screen and (max-width: 720px) {
     #fine_print {
@@ -59,6 +73,9 @@
         display: block;
     }
     .showBig {
+        display: none;
+    }
+    .pgNum {
         display: none;
     }
 }

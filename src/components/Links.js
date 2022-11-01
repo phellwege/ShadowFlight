@@ -67,6 +67,7 @@ export default () => {
                                     </a>
                             </div>
                         </div>
+                        <h2 className='pgNum'><span className='firstNum'><FullpageSection.Number/></span>/4</h2>
                     </FullpageSection>
                     <FullpageSection style={{SectionStyle}} className='fullpage2'>
                         <div class="page_wrap">
@@ -80,6 +81,7 @@ export default () => {
                                     <li><a href='https://www.youtube.com/watch?v=qNzvrDrPtcg' target="_blank">Reaction Tutorial</a></li>
                                 </ul>
                         </div>
+                        <h2 className='pgNum'><span className='firstNum'><FullpageSection.Number/></span>/4</h2>
                     </FullpageSection>
                     <FullpageSection style={{SectionStyle}} className='fullpage1'>
                         <div class="page_wrap">
@@ -90,6 +92,7 @@ export default () => {
                                     <li><a href='https://wiki.eveuniversity.org/Implants' target="_blank">Implants</a></li>
                                 </ul>
                         </div>
+                        <h2 className='pgNum'><span className='firstNum'><FullpageSection.Number/></span> /4</h2>
                     </FullpageSection>
                     <FullpageSection style={{SectionStyle}} className='fullpage2'>
                         <div class="page_wrap">
@@ -101,6 +104,7 @@ export default () => {
                                     <li><a href='https://eve-survival.org/wikka.php?wakka=WormholeSpaceClass5' target="_blank">C5</a></li>
                                 </ul>
                         </div>
+                        <h2 className='pgNum'><span className='firstNum'><FullpageSection.Number/></span> /4</h2>
                     </FullpageSection>
                 </FullPageSections>
             </Fullpage>      
