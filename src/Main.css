@@ -46,4 +46,7 @@
     #fine_print {
         font-size: .75em;
     }
+    .page_wrap {
+        padding-top: 50%;
+    }
 }
