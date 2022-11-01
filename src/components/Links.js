@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useRef } from "react";
+import Fullpage, { FullPageSections, FullpageSection, FullpageNavigation } from '@ap.cx/react-fullpage';
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
 import Harbinger from '../static/harbinger.gif'
@@ -17,56 +18,70 @@ const ships = [
 ];
 
 export default () => {
+    const SectionStyle ={
+        height: '100vh',
+        width: '100%',
+        display: 'flex', 
+        justifyContent: 'center',
+        alignItems: 'center'
+    };
     return (
         <>
-            <div class="page_wrap" id='About'>
-                <div>
-                        <br/>
-                        <div id='container-div'>
-                            <div id='about-div'>
-                                <h2>zKillBoard</h2>
-                                <div id='shipImg'>
-                                <AliceCarousel mouseTracking items={ships} autoPlay={true} autoPlayInterval={3000} infinite={true} innerWidth={570}/>
+            <Fullpage>
+                <FullpageNavigation/>
+                <FullPageSections>
+                    <FullpageSection style={{SectionStyle}} className='fullpage1'>
+                        <div class="page_wrap">
+                            <div id='container-div'>
+                                <div id='about-div'>
+                                    <h2>zKillBoard</h2>
+                                    <div id='shipImg'>
+                                    <AliceCarousel mouseTracking items={ships} autoPlay={true} autoPlayInterval={3000} infinite={true} innerWidth={570}/>
+                                    </div>
+                                    <a href='https://zkillboard.com/corporation/98504902/'>
+                                        <br/>
+                                        ZkillBoard
+                                    </a>
                                 </div>
-                                <a href='https://zkillboard.com/corporation/98504902/'>
-                                    <br/>
-                                    ZkillBoard
-                                </a>
                             </div>
                         </div>
-                        <br/>
-                </div> 
-                    <div id='divSplit'>                    
-                        <div id='inner-div'>
+                    </FullpageSection>
+                    <FullpageSection style={{SectionStyle}} className='fullpage2'>
+                        <div class="page_wrap">
                             <h3>Industry</h3>
-                            <ul id='whatWeOffer'>
-                                <li><a href='https://www.evecookbook.com' target="_blank">EVE Cook Book</a></li>
-                                <li><a href='https://evepraisal.com/' target="_blank">EvePraisal</a></li>
-                                <li><a href='https://wiki.eveuniversity.org/Gas_cloud_harvesting' target="_blank">Gas Cloud Harvesting</a></li>
-                                <li><a href='https://ore.cerlestes.de/ore#site:ore' target="_blank">ORE Tables</a></li>
-                                <li><a href='https://wiki.eveuniversity.org/Reactions' target="_blank">Reactions</a></li>
-                                <li><a href='https://www.youtube.com/watch?v=qNzvrDrPtcg' target="_blank">Reaction Tutorial</a></li>
-                            </ul>
+                                <ul id='whatWeOffer'>
+                                    <li><a href='https://www.evecookbook.com' target="_blank">EVE Cook Book</a></li>
+                                    <li><a href='https://evepraisal.com/' target="_blank">EvePraisal</a></li>
+                                    <li><a href='https://wiki.eveuniversity.org/Gas_cloud_harvesting' target="_blank">Gas Cloud Harvesting</a></li>
+                                    <li><a href='https://ore.cerlestes.de/ore#site:ore' target="_blank">ORE Tables</a></li>
+                                    <li><a href='https://wiki.eveuniversity.org/Reactions' target="_blank">Reactions</a></li>
+                                    <li><a href='https://www.youtube.com/watch?v=qNzvrDrPtcg' target="_blank">Reaction Tutorial</a></li>
+                                </ul>
                         </div>
-                        <div id='inner-div'>
+                    </FullpageSection>
+                    <FullpageSection style={{SectionStyle}} className='fullpage1'>
+                        <div class="page_wrap">
                             <h3>Wormhole Life</h3>
                                 <ul id='whatWeOffer'>
                                     <li><a href='https://docs.google.com/document/d/18Izmfii3oWAoBwu87xjiq-ayNKa5fyReX5wHp-T8KDw/edit' target="_blank">Bookmarking Guide</a></li>
                                     <li><a href='https://www.ellatha.com/eve/wormholelist.asp' target="_blank">WH List</a></li>
                                     <li><a href='https://wiki.eveuniversity.org/Implants' target="_blank">Implants</a></li>
-                                </ul>                        
+                                </ul>
                         </div>
-                        <div id='inner-div'>
+                    </FullpageSection>
+                    <FullpageSection style={{SectionStyle}} className='fullpage2'>
+                        <div class="page_wrap">
                             <h3>PVE Survival Guides</h3>
-                            <ul id='whatWeOffer'>
-                                <li><a href='https://eve-survival.org/wikka.php?wakka=HomePage' target="_blank">EVE Survival</a></li>
-                                <li><a href='https://eve-survival.org/wikka.php?wakka=WormholeSpaceClass3' target="_blank">C3</a></li>
-                                <li><a href='https://eve-survival.org/wikka.php?wakka=WormholeSpaceClass4' target="_blank">C4</a></li>
-                                <li><a href='https://eve-survival.org/wikka.php?wakka=WormholeSpaceClass5' target="_blank">C5</a></li>
-                            </ul>
+                                <ul id='whatWeOffer'>
+                                    <li><a href='https://eve-survival.org/wikka.php?wakka=HomePage' target="_blank">EVE Survival</a></li>
+                                    <li><a href='https://eve-survival.org/wikka.php?wakka=WormholeSpaceClass3' target="_blank">C3</a></li>
+                                    <li><a href='https://eve-survival.org/wikka.php?wakka=WormholeSpaceClass4' target="_blank">C4</a></li>
+                                    <li><a href='https://eve-survival.org/wikka.php?wakka=WormholeSpaceClass5' target="_blank">C5</a></li>
+                                </ul>
                         </div>
-                    </div>
-            </div>          
+                    </FullpageSection>
+                </FullPageSections>
+            </Fullpage>      
         </>
     )
 }
