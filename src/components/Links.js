@@ -9,7 +9,6 @@ import Hurricane from '../static/hurricane.gif';
 import Typhoon from '../static/typhoon.gif';
 import "swiper/css/bundle";
 
-const handleDragStart = (e) => e.preventDefault();
 
 export default () => {
     const SectionStyle ={
@@ -71,7 +70,7 @@ export default () => {
                     </FullpageSection>
                     <FullpageSection style={{SectionStyle}} className='fullpage2'>
                         <div class="page_wrap">
-                            <h3>Industry</h3>
+                            <h2>Industry</h2>
                                 <ul id='whatWeOffer'>
                                     <li><a href='https://www.evecookbook.com' target="_blank">EVE Cook Book</a></li>
                                     <li><a href='https://evepraisal.com/' target="_blank">EvePraisal</a></li>
@@ -84,7 +83,7 @@ export default () => {
                     </FullpageSection>
                     <FullpageSection style={{SectionStyle}} className='fullpage1'>
                         <div class="page_wrap">
-                            <h3>Wormhole Life</h3>
+                            <h2>Wormhole Life</h2>
                                 <ul id='whatWeOffer'>
                                     <li><a href='https://docs.google.com/document/d/18Izmfii3oWAoBwu87xjiq-ayNKa5fyReX5wHp-T8KDw/edit' target="_blank">Bookmarking Guide</a></li>
                                     <li><a href='https://www.ellatha.com/eve/wormholelist.asp' target="_blank">WH List</a></li>
@@ -94,7 +93,7 @@ export default () => {
                     </FullpageSection>
                     <FullpageSection style={{SectionStyle}} className='fullpage2'>
                         <div class="page_wrap">
-                            <h3>PVE Survival Guides</h3>
+                            <h2>PVE Survival Guides</h2>
                                 <ul id='whatWeOffer'>
                                     <li><a href='https://eve-survival.org/wikka.php?wakka=HomePage' target="_blank">EVE Survival</a></li>
                                     <li><a href='https://eve-survival.org/wikka.php?wakka=WormholeSpaceClass3' target="_blank">C3</a></li>
