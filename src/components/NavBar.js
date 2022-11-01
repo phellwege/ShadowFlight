@@ -123,6 +123,18 @@ const NavBar = () => {
         text-shadow:${props =>
             props.theme.mode === 'dark' ? '0 0 1.25px #1ABC9C' : '0 0 1.25px royalblue'};
     }
+    #nightMoon {
+        display: ${props =>
+            props.theme.mode === 'dark' ? '' : 'none'};
+        color: ${props =>
+            props.theme.mode === 'dark' ? 'whitesmoke' : ''};
+    }
+    #daySun {
+        display: ${props =>
+            props.theme.mode === 'dark' ? 'none' : ''};
+        color: ${props =>
+            props.theme.mode === 'dark' ? '' : '#ffb302'};
+    }
     };
 `
     return (
@@ -141,7 +153,7 @@ const NavBar = () => {
                             <li><a class="active" href="/#headspace" onClick={() => closeMenu()}>Home</a></li>
                             <div className="Mode" id='menu_toggle' onClick={() => closeMenu()}>
                                 <Toggle toggled={toggled} onClick={handleClick} />
-                                {theme.mode === 'dark' ? "Light Mode" : "Dark Mode"}
+                                {theme.mode === 'dark' ? "Light" : "Dark"}
                             </div>
                             <li><a href="https://seat.seachest.net/home" target="_blank" onClick={() => closeMenu()}>Seat Login</a></li>
                             <li><a href="https://path.shadowflight.org/map/MQ%3D%3D" target="_blank" onClick={() => closeMenu()}>Pathfinder</a></li>
