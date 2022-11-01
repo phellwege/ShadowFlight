@@ -1,21 +1,15 @@
 import React, { useEffect, useRef } from "react";
 import Fullpage, { FullPageSections, FullpageSection, FullpageNavigation } from '@ap.cx/react-fullpage';
-import AliceCarousel from 'react-alice-carousel';
-import "react-alice-carousel/lib/alice-carousel.css";
-import Harbinger from '../static/harbinger.gif'
-import Abaddon from '../static/abaddon.gif'
-import Drake from '../static/drake.gif'
-import Hurricane from '../static/hurricane.gif'
-import Typhoon from '../static/typhoon.gif'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Lazy} from "swiper";
+import Harbinger from '../static/harbinger.gif';
+import Abaddon from '../static/abaddon.gif';
+import Drake from '../static/drake.gif';
+import Hurricane from '../static/hurricane.gif';
+import Typhoon from '../static/typhoon.gif';
+import "swiper/css/bundle";
 
 const handleDragStart = (e) => e.preventDefault();
-const ships = [
-    <img src={Abaddon} onDragStart={handleDragStart} />,
-    <img src={Drake} onDragStart={handleDragStart} />,
-    <img src={Hurricane} onDragStart={handleDragStart} />,
-    <img src={Typhoon} onDragStart={handleDragStart} />,
-    <img src={Harbinger} onDragStart={handleDragStart} />,
-];
 
 export default () => {
     const SectionStyle ={
@@ -32,17 +26,46 @@ export default () => {
                 <FullPageSections>
                     <FullpageSection style={{SectionStyle}} className='fullpage1'>
                         <div class="page_wrap">
-                            <div id='container-div'>
-                                <div id='about-div'>
+                            <div id='container-div' className="shipImg">
                                     <h2>zKillBoard</h2>
-                                    <div id='shipImg'>
-                                    <AliceCarousel mouseTracking items={ships} autoPlay={true} autoPlayInterval={3000} infinite={true} innerWidth={570}/>
-                                    </div>
+                                    <Swiper
+                                        pagination={{
+                                            dynamicBullets: true,
+                                            }}
+                                            modules={[Pagination, Lazy]}
+                                            className=".sliderShipImg"
+                                        >
+                                        <SwiperSlide>
+                                            <a href='https://zkillboard.com/corporation/98504902/'>
+                                                <img src={Abaddon} alt='abaddon'/>
+                                            </a>   
+                                        </SwiperSlide>
+                                        <SwiperSlide>
+                                            <a href='https://zkillboard.com/corporation/98504902/'>
+                                                <img src={Drake} alt='drake'/>
+                                            </a>
+                                        </SwiperSlide>
+                                        <SwiperSlide>
+                                            <a href='https://zkillboard.com/corporation/98504902/'>
+                                                <img src={Hurricane} alt='hurricane'/>
+                                            </a>
+                                        </SwiperSlide>
+                                        <SwiperSlide>
+                                            <a href='https://zkillboard.com/corporation/98504902/'>
+                                                <img src={Typhoon} alt='typhoon'/>
+                                            </a>
+                                        </SwiperSlide>
+                                        <SwiperSlide>
+                                            <a href='https://zkillboard.com/corporation/98504902/'>
+                                                <img src={Harbinger} alt='harbinger'/>
+                                            </a>
+                                        </SwiperSlide>
+                                        ...
+                                    </Swiper>
                                     <a href='https://zkillboard.com/corporation/98504902/'>
                                         <br/>
                                         ZkillBoard
                                     </a>
-                                </div>
                             </div>
                         </div>
                     </FullpageSection>

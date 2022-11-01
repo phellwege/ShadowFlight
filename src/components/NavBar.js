@@ -111,7 +111,7 @@ const NavBar = () => {
         border:${props =>
             props.theme.mode === 'dark' ? '2px solid #1ABC9C' : '2px solid royalblue'};
     }
-    #shipImg {
+    .shipImg {
         border:${props =>
             props.theme.mode === 'dark' ? '5px solid #1ABC9C' : '5px solid royalblue'};
     }
