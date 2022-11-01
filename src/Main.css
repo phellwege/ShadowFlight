@@ -7,6 +7,12 @@
     padding: 0;
     margin: 0;
 }
+#showSmall {
+    display: none;
+}
+.showBig {
+    display: block;
+}
 ::-webkit-scrollbar {
     display: none;
 }
@@ -48,5 +54,11 @@
     }
     .page_wrap {
         padding-top: 50%;
+    }
+    #showSmall {
+        display: block;
+    }
+    .showBig {
+        display: none;
     }
 }

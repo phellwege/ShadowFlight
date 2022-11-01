@@ -20,18 +20,25 @@ export default () => {
         <div id="background">
             <NavBar />
             <Header />
-            <Fullpage>
-                <FullpageNavigation/>
-                <FullPageSections>
-                    <FullpageSection style={{SectionStyle}} className='fullpage1'>
-                        <About />
-                    </FullpageSection>
-                    <FullpageSection style={{SectionStyle}} className='fullpage2'>
-                        <Contact />
-                        <Footer />
-                    </FullpageSection>
-                </FullPageSections>
-            </Fullpage>
+            <div id='showSmall'>
+                <About />
+                <Contact />
+                <Footer />
+            </div>
+            <div className='showBig'>
+                <Fullpage>
+                    <FullpageNavigation/>
+                    <FullPageSections>
+                        <FullpageSection style={{SectionStyle}} className='fullpage1'>
+                            <About />
+                        </FullpageSection>
+                        <FullpageSection style={{SectionStyle}} className='fullpage2'>
+                            <Contact />
+                            <Footer />
+                        </FullpageSection>
+                    </FullPageSections>
+                </Fullpage>
+            </div>
         </div>
     )
 }
