@@ -164,7 +164,7 @@ const NavBar = () => {
                             <li><a href="/NewBroLinks" onClick={() => closeMenu()}>Helpful Links</a></li>
                             <br/>
                             <a href='https://discord.gg/xUnv7yZV'><img src={Discord} id='discordLogo'/><br/>Discord</a>
-                            <img src={Stratios} id='Stratios'/>
+                            <img src={Stratios} id='Stratios' className='unselectable'/>
                         </ul>
                 </nav>
             </div>
