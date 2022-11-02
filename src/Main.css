@@ -51,6 +51,12 @@ h2.pgNum {
     display: block;
     position: absolute;
     right: 12%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .firstNum {
     font-size: 1.5em;
