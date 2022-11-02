@@ -36,6 +36,7 @@
     }
     a {
         display: block;
+        border: 1px solid transparent;
         padding: 10px 40px;
         text-decoration: none;
         color: white;
