@@ -27,7 +27,7 @@ This is a website currently in use for a small corporation called ShadowFlight w
 
 ### What I learned
 
-This was fairly straight forwards; I worked with the client directly and produced a website meeting their needs. I integrated several libraries that really made this project come together nicely. Improved performance with the use of website design fundamentals.
+This was fairly straight forwards; I worked with the client directly, and produced a website meeting their needs. I integrated several libraries that really made this project come together nicely. Improved performance with the use of website design fundamentals such as lazy loading and correct img sizes.
 
 ### Useful resources
 
