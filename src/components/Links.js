@@ -26,7 +26,7 @@ export default () => {
                     <FullpageSection style={{SectionStyle}} className='fullpage1'>
                         <div class="page_wrap">
                             <div id='container-div' className="shipImg">
-                                    <h2>zKillBoard</h2>
+                                    <h2 className='unselectable'>zKillBoard</h2>
                                     <Swiper
                                         pagination={{
                                             dynamicBullets: true,
@@ -71,7 +71,7 @@ export default () => {
                     </FullpageSection>
                     <FullpageSection style={{SectionStyle}} className='fullpage2'>
                         <div class="page_wrap">
-                            <h2>Industry</h2>
+                            <h2 className='unselectable'>Industry</h2>
                                 <ul id='whatWeOffer'>
                                     <li><a href='https://www.evecookbook.com' target="_blank">EVE Cook Book</a></li>
                                     <li><a href='https://evepraisal.com/' target="_blank">EvePraisal</a></li>
@@ -85,7 +85,7 @@ export default () => {
                     </FullpageSection>
                     <FullpageSection style={{SectionStyle}} className='fullpage1'>
                         <div class="page_wrap">
-                            <h2>Wormhole Life</h2>
+                            <h2 className='unselectable'>Wormhole Life</h2>
                                 <ul id='whatWeOffer'>
                                     <li><a href='https://docs.google.com/document/d/18Izmfii3oWAoBwu87xjiq-ayNKa5fyReX5wHp-T8KDw/edit' target="_blank">Bookmarking Guide</a></li>
                                     <li><a href='https://www.ellatha.com/eve/wormholelist.asp' target="_blank">WH List</a></li>
@@ -96,7 +96,7 @@ export default () => {
                     </FullpageSection>
                     <FullpageSection style={{SectionStyle}} className='fullpage2'>
                         <div class="page_wrap">
-                            <h2>PVE Survival Guides</h2>
+                            <h2 className='unselectable'>PVE Survival Guides</h2>
                                 <ul id='whatWeOffer'>
                                     <li><a href='https://eve-survival.org/wikka.php?wakka=HomePage' target="_blank">EVE Survival</a></li>
                                     <li><a href='https://eve-survival.org/wikka.php?wakka=WormholeSpaceClass3' target="_blank">C3</a></li>

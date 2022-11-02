@@ -9,7 +9,7 @@ export default () => {
         <>
             <div class="page_wrap" id='Contact'>
                 <div>
-                    <h2>Contact</h2>
+                    <h2 className='unselectable'>Contact</h2>
                 </div>
                 <div id='divSplitContact'>
                     <div id='inner-div'>
