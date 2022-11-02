@@ -9,9 +9,9 @@ const Head = () => {
 
     return (
         <div id='headspace'>
-            <div>
+            <div className='unselectable'>
                 <h1>
-                    <img src={logo} id='Logo'/>
+                    <img src={logo} id='Logo' />
                     <br/>
                     Shadow Flight
                 </h1>
