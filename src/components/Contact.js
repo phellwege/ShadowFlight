@@ -21,7 +21,7 @@ export default () => {
                         </p> 
                         <div id='divSplitRecruit'>
                             <div>
-                                <img src={cookadile} id='portrait'/>
+                                <img src={cookadile} id='portrait' className='unselectable'/>
                                 <br/>
                                 <span id='in_game'>Cookadile Dundee</span>
                                 <p>(EU Time Zone)
@@ -29,7 +29,7 @@ export default () => {
                                 in-game</p>
                             </div>
                             <div>
-                                <img src={lall} id='portrait'/>
+                                <img src={lall} id='portrait' className='unselectable'/>
                                 <br/>
                                 <span id='in_game'>Lall</span>
                                 <p>(US Time Zone)
