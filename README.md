@@ -1,6 +1,6 @@
 # ShadowFlight
 
-This is a website currently in use for a small corporation called ShadowFlight within Eve Online. this website outlines basic information and procedural data for the corporation, and gameplay in Eve Online.
+This is a website currently in use for a small corporation called ShadowFlight within Eve Online. This website outlines basic information and procedural data for the corporation, and gameplay in Eve Online.
 
 ## Table of contents
 
