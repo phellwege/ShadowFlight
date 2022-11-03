@@ -4,7 +4,7 @@ This is a website currently in use for a small corporation called ShadowFlight w
 
 ## Table of contents
 
-  <!-- - [Screenshot](#screenshot) -->
+  - [Screenshot](#screenshot)
   <!-- - [My process](#my-process) -->
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -12,9 +12,9 @@ This is a website currently in use for a small corporation called ShadowFlight w
   - [Author](#author)
 
 
-<!-- ### Screenshot
+ ### Screenshot
 
-![](./client/src/static/giphyHomePage.gif) -->
+![](./client/src/static/HomeScreen.png)
 
 
 ### Built with
