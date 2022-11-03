@@ -5,7 +5,6 @@ This is a website currently in use for a small corporation called ShadowFlight w
 ## Table of contents
 
   - [Screenshot](#screenshot)
-  <!-- - [My process](#my-process) -->
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Useful resources](#useful-resources)
