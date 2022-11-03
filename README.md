@@ -14,7 +14,7 @@ This is a website currently in use for a small corporation called ShadowFlight w
 
  ### Screenshot
 
-[](./client/src/static/HomeScreen.png)
+![](./src/static/HomeScreen.png)
 
 
 ### Built with
