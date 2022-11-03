@@ -18,7 +18,7 @@ This is a website currently in use for a small corporation called ShadowFlight w
 
 ### Links
 
-- Live Site URL: [GH-Pages](https://shadowflight.org/)
+- Live Site URL: [ShadowFlight](https://shadowflight.org/)
 
 ### Built with
 
