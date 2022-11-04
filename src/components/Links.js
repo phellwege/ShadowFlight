@@ -18,6 +18,7 @@ export default () => {
         justifyContent: 'center',
         alignItems: 'center'
     };
+
     return (
         <>
             <Fullpage>
