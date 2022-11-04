@@ -20,7 +20,7 @@
   z-index: 1;
   background-image: url('./static/WHandBomber2.jpeg');
   background-position: 20% -55%;
-  overflow: hidden;
+  overflow: clip;
 }
 #Logo {
   height: 125px;
