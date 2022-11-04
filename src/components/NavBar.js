@@ -139,6 +139,10 @@ const NavBar = () => {
         color: ${props =>
             props.theme.mode === 'dark' ? '' : '#ffb302'};
     }
+    :root {
+        --swiper-theme-color: ${props =>
+            props.theme.mode === 'dark' ? '#1ABC9C' : 'royalblue'};
+    }
     };
 `
     return (
