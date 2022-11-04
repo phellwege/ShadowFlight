@@ -82,6 +82,9 @@ div.swiper-wrapper{
   border-radius: 7.5px;
   right: 7.25%;
 }
+div[role=button] {
+  background-color: red;
+}
 #inner-div {
   width:25%;
 }

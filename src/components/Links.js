@@ -21,10 +21,10 @@ export default () => {
     return (
         <>
             <Fullpage>
-                <FullpageNavigation/>
+                <FullpageNavigation />
                 <FullPageSections>
                     <FullpageSection style={{SectionStyle}} className='fullpage1'>
-                        <div class="page_wrap">
+                        <div className="page_wrap">
                             <div id='container-div' className="shipImg">
                                     <h2 className='unselectable'>zKillBoard</h2>
                                     <Swiper
@@ -70,7 +70,7 @@ export default () => {
                         <h2 className='pgNum'><span className='firstNum'><FullpageSection.Number/></span>/4</h2>
                     </FullpageSection>
                     <FullpageSection style={{SectionStyle}} className='fullpage2'>
-                        <div class="page_wrap">
+                        <div className="page_wrap">
                             <h2 className='unselectable'>Industry</h2>
                                 <ul id='whatWeOffer'>
                                     <li><a href='https://www.evecookbook.com' target="_blank">EVE Cook Book</a></li>
@@ -84,7 +84,7 @@ export default () => {
                         <h2 className='pgNum'><span className='firstNum'><FullpageSection.Number/></span>/4</h2>
                     </FullpageSection>
                     <FullpageSection style={{SectionStyle}} className='fullpage1'>
-                        <div class="page_wrap">
+                        <div className="page_wrap">
                             <h2 className='unselectable'>Wormhole Life</h2>
                                 <ul id='whatWeOffer'>
                                     <li><a href='https://docs.google.com/document/d/18Izmfii3oWAoBwu87xjiq-ayNKa5fyReX5wHp-T8KDw/edit' target="_blank">Bookmarking Guide</a></li>
@@ -95,7 +95,7 @@ export default () => {
                         <h2 className='pgNum'><span className='firstNum'><FullpageSection.Number/></span> /4</h2>
                     </FullpageSection>
                     <FullpageSection style={{SectionStyle}} className='fullpage2'>
-                        <div class="page_wrap">
+                        <div className="page_wrap">
                             <h2 className='unselectable'>PVE Survival Guides</h2>
                                 <ul id='whatWeOffer'>
                                     <li><a href='https://eve-survival.org/wikka.php?wakka=HomePage' target="_blank">EVE Survival</a></li>

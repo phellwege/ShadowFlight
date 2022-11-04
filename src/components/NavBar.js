@@ -158,7 +158,7 @@ const NavBar = () => {
                     )}
                     </button>
                         <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
-                            <li><a class="active" href="/#headspace" onClick={() => closeMenu()}>Home</a></li>
+                            <li><a className="active" href="/#headspace" onClick={() => closeMenu()}>Home</a></li>
                             <div className="Mode" id='menu_toggle' onClick={() => closeMenu()}>
                                 <Toggle toggled={toggled} onClick={handleClick} />
                                 {theme.mode === 'dark' ? "Dark" : "Light"}

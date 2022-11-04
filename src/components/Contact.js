@@ -7,7 +7,7 @@ import lall from '../static/lall.jpeg'
 export default () => {
     return (
         <>
-            <div class="page_wrap" id='Contact'>
+            <div className="page_wrap" id='Contact'>
                 <div>
                     <h2 className='unselectable'>Contact</h2>
                 </div>

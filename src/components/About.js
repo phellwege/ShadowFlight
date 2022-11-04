@@ -4,7 +4,7 @@ import Typewriter from 'typewriter-effect';
 export default () => {
     return (
         <>
-            <div class="page_wrap" id='About'>
+            <div className="page_wrap" id='About'>
                 <div>
                         <br/>
                         <div id='container-div'>
