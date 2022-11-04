@@ -109,7 +109,7 @@ const NavBar = () => {
     }
     #portrait {
         border:${props =>
-            props.theme.mode === 'dark' ? '2px solid #1ABC9C' : '2px solid royalblue'};
+            props.theme.mode === 'dark' ? '3px solid #1ABC9C' : '3px solid royalblue'};
     }
     .pgNum {
         color: ${props =>
