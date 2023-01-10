@@ -22,6 +22,13 @@ const NavBar = () => {
         const closeMenu = () => {
             setNavbarOpen(false)
         }
+        useEffect(() => {
+            const data = window.localStorage.getItem('ShadowFlightThemeKey')
+            if(data != null) setTheme(JSON.parse(data))
+        }, [])
+        useEffect(() => {
+           window.localStorage.setItem('ShadowFlightThemeKey', JSON.stringify(theme)) 
+        }, [theme])
         let menuRef = useRef();
         useEffect(() => {
             let handler = (event) => {
