@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Link } from '@reach/router';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import Toggle from '../Toggle/DayNight_Mode';
@@ -22,6 +22,18 @@ const NavBar = () => {
         const closeMenu = () => {
             setNavbarOpen(false)
         }
+        let menuRef = useRef();
+        useEffect(() => {
+            let handler = (event) => {
+                if(!menuRef.current.contains(event.target)){
+                    setNavbarOpen(false);
+                }
+            }
+            document.addEventListener('mousedown', handler)
+            return () => {
+                document.removeEventListener('mousedown', handler);
+            }
+        })
 
 // the first set is dark mode the second is light mode
 // dark contrast color b1b1b3
@@ -150,7 +162,7 @@ const NavBar = () => {
         <ThemeProvider theme={theme}>
         <GlobalStyle />
             <div id="Hamburger_Menu">
-                <nav className="navBar">
+                <nav ref={menuRef} className="navBar">
                     <button onClick={handleToggle}>{navbarOpen ? (
                     <MdClose style={{ color: "#7b7b7b", width: "40px", height: "40px" }} />
                     ) : (
